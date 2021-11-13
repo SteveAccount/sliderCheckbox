@@ -4,9 +4,9 @@ A bővítménnyel egy testreszabható megjelenésű szöveges csúszkát kapsz, 
 
 Helyezd el a kódodban a következőt:
 
-`<div data-id='colorSelector' data-text-true='Fekete' data-text-false='Fehér' data-name='color', data-value-true='black', data-value-false='white'></div>`
+`<div id="scExample" data-id='colorSelector' data-text-true='Fekete' data-text-false='Fehér' data-name='color', data-value-true='black', data-value-false='white'></div>`
 
-`$("#colorSelector").sliderCheckbox();`
+`$("#scExample").sliderCheckbox();`
 
 A `<div>` első három attribútumát meg kell adni. Az utolsó három nem kötelező. Utóbbi attribútumokat a létrejövő `<input>` kapja meg.
 
