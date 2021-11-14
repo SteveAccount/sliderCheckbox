@@ -1,0 +1,60 @@
+
+/*sliderCheckbox*/
+.my-scContainer{
+    border: none;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 90px;
+}
+.my-scCheckbox {
+    display: none;
+}
+.my-scLabel {
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+.my-scInner {
+    display: block;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    width: 200%;
+}
+.my-scInner:before,
+.my-scInner:after {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    width: 50%;
+}
+.my-scInner:before {
+    background-color: #636262;
+    color: white;
+    content: attr(data-text-true);
+    padding-left: .75em;
+}
+.my-scInner:after {
+    background-color: #636262;
+    color: white;
+    content: attr(data-text-false);
+    padding-right: .75em;
+    text-align: right;
+}
+.my-scCircle {
+}
+.my-scCheckbox:checked + .my-scLabel .my-scInner {
+    margin-left: 0;
+}
+.my-scCheckbox:checked + .my-scLabel .my-scCircle {
+    background-color: white;
+    right: 0;
+}

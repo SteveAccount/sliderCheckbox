@@ -2,6 +2,10 @@
 
 A bővítménnyel egy testreszabható megjelenésű szöveges csúszkát kapsz, ami egy `<input type="checkbox'> `html elemet személyesít meg.
 
+Az eredeti css megoldást loptam (köszönet Matt Smith), a javaScript saját szerzemény.
+
+A css nem kell a működéshez, az már egy testreszabott változat.
+
 Helyezd el a kódodban a következőt:
 
 `<div id="scExample" data-id='colorSelector' data-text-true='Fekete' data-text-false='Fehér' data-name='color', data-value-true='black', data-value-false='white'></div>`
